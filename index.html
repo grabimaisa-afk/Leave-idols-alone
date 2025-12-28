@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idols Safe Zone</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; scroll-behavior: smooth; }
+header { background:#6c63ff; color:white; padding:2rem; text-align:center; }
+nav { background:#4b3ca7; text-align:center; padding:1rem; position: sticky; top:0; }
+nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { padding:3rem 2rem; max-width:900px; margin:auto; display:none; }
+section.active { display:block; }
+footer { background:#4b3ca7; color:white; text-align:center; padding:1.5rem; }
+.idol-img { width:100%; max-width:400px; display:block; margin:auto; border-radius:10px; margin-bottom:2rem; }
+.quote { font-style:italic; background:#f0f0f0; padding:1rem; border-left:5px solid #4b3ca7; margin:1rem 0; }
+h1,h2,h3 { text-align:center; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Idols Safe Zone</h1>
+<p>Stop the hate. Let idols live.</p>
+</header>
+
+<nav>
+<a onclick="showSection('home')">Home</a>
+<a onclick="showSection('winter')">Winter</a>
+<a onclick="showSection('jungkook')">Jungkook</a>
+<a onclick="showSection('resources')">Resources</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="active">
+<h2>Welcome</h2>
+<p>Welcome to Idols Safe Zone! This site is dedicated to protecting K-pop idols from hate and rumors. Respect their privacy, support their work, and spread love instead of hate.</p>
+<p>아이돌을 보호하고 루머와 악플로부터 지키기 위한 사이트입니다. 그들의 사생활을 존중하고, 활동을 응원하며, 사랑을 전하세요.</p>
+</section>
+
+<!-- Winter Section -->
+<section id="winter">
+<h2>Winter (aespa)</h2>
+<img src="https://via.placeholder.com/400x400?text=Winter" alt="Winter" class="idol-img">
+
+<h3>ENGLISH</h3>
+<p>Winter deserves respect, not hate.</p>
+<p>Recently, Winter from aespa has once again become the target of extreme hate because of dating rumors that have never been confirmed. These rumors were built on assumptions, edits, theories, and so-called “evidence” taken out of context. Yet she is being attacked as if she committed a crime.</p>
+<p>Let this be very clear: a dating rumor is not a wrongdoing. And even if it were true, it would still be her personal choice and her private life.</p>
+<p>Idols are human beings. Winter is an artist, but she is not the property of fans. Fans do not know her personally. They know her music, her performances, and her public image, but not her private life. No one has the right to control who she talks to or dates.</p>
+<div class="quote">"No idol deserves hate for living. Leave Winter alone. Let idols live."</div>
+
+<h3>KOREAN (한국어)</h3>
+<p>윈터는 혐오가 아니라 존중을 받아야 합니다.</p>
+<p>최근 에스파의 윈터는 확인되지 않은 열애설로 인해 다시 한 번 극심한 악성 비난의 대상이 되었습니다...</p>
+<div class="quote">"윈터를 혼자 두세요. 아이돌들이 살 수 있게 해주세요. 혐오는 여기서 멈춰야 합니다."</div>
+</section>
+
+<!-- Jungkook Section -->
+<section id="jungkook">
+<h2>Jungkook (BTS)</h2>
+<img src="https://via.placeholder.com/400x400?text=Jungkook" alt="Jungkook" class="idol-img">
+
+<h3>ENGLISH</h3>
+<p>Jungkook is human and deserves privacy and respect.</p>
+<p>Unconfirmed dating rumors and false accusations should never justify hate or harassment. Fans often confuse love for control, which can seriously harm an artist’s mental health.</p>
+<div class="quote">"Respect idols' privacy. Love them, don't control them."</div>
+
+<h3>KOREAN (한국어)</h3>
+<p>정국 또한 인간이며 존중받아야 합니다.</p>
+<p>확인되지 않은 열애설이나 거짓 비난으로 아이돌을 공격하는 것은 잘못된 행동입니다...</p>
+<div class="quote">"아이돌의 사생활을 존중하세요. 사랑은 할 수 있지만 통제할 권리는 없습니다."</div>
+</section>
+
+<!-- Resources Section -->
+<section id="resources">
+<h2>Resources</h2>
+<ul>
+<li><a href="https://www.koreaboo.com" target="_blank">Koreaboo - K-pop News</a></li>
+<li><a href="https://www.mentalhealth.org" target="_blank">Mental Health Support</a></li>
+<li><a href="https://www.stopbullying.gov" target="_blank">Stop Bullying Resources</a></li>
+</ul>
+</section>
+
+<footer>
+<p>&copy; 2025 Idols Safe Zone | Respect Privacy, Stop Hate</p>
+</footer>
+
+<script>
+function showSection(id) {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
